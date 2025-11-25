@@ -21,7 +21,7 @@ ul{
     font-size: 1.5em;
 }
 
-main {
+body {
     margin: 0px;
     padding: 20px;
     background-color: beige;
@@ -45,7 +45,6 @@ h1 {
   font-style: normal;
     font-size: 1.2em;
 }
-
 
 
 
@@ -108,4 +107,5 @@ footer {
     margin-top: 20px;
     padding: 10px;
     border-top: 1px solid rgb(200, 200, 200);
+    background-color: #fff;
 } 
