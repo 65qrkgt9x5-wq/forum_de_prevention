@@ -1,0 +1,102 @@
+/* aller chercher les couleurs avec canva 
+pour faire des bordures fancy-border-radius*/
+p,
+h2,
+h3{
+    color:rgb(0, 0, 0);
+    font-family: "Futura", sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2{
+    color:rgb(0, 0, 0);
+    font-family: "Futura", sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+ul{
+    color:rgb(0, 0, 0);
+    font-family: "Futura";
+    font-size: 1.5em;
+}
+
+main {
+    margin: 0px;
+    padding: 20px;
+    background-color: beige;
+}
+
+
+h1 {
+    color:rgb(149, 42, 0);
+  font-family: "Stack Sans Notch", sans-serif;
+  width:auto;
+  white-space: nowrap;
+    font-size: 5em;
+    margin:0;
+}
+
+.liste {
+    color:rgb(96, 24, 0);
+  font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    font-size: 1.2em;
+}
+
+
+
+
+a {
+    text-decoration: underline;
+    color:  #9b503d;
+    font-family: "Arial";
+    font-weight: "Black";
+}
+
+.dd{
+    border : 4px solid rgb(169, 62, 0);
+    border-radius: 10px;
+    box-shadow: 8px 8px 2px rgb(159, 71, 0);
+    margin: 2%;
+    padding: 2%;
+}
+
+.dd:hover {
+    box-shadow: 12px 12px 3px rgb(128, 128, 128);
+    transform: scale(1.005);
+}
+
+#logo {
+    width: 130px;
+    object-fit: contain;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/* --- VERSION MOBILE --- */
+@media screen and (max-width: 900px) {
+    
+    .container {
+        flex-direction: column; /* IMPORTANT : On empile (Logo au dessus, Titre en dessous) */
+        gap: 10px;              /* On réduit un peu l'espace entre les deux */
+    }
+
+    h1 {
+        white-space: normal;    /* IMPORTANT : On autorise le texte à passer à la ligne si besoin */
+        text-align: center;     /* On centre le texte */
+        font-size: 4em;       /* On réduit un peu la taille de la police pour le mobile */
+    }
+
+    #logo {
+        width: 100px;           /* On peut réduire un peu le logo si on veut */
+    }
+}
