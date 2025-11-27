@@ -28,9 +28,10 @@ body {
 }
 
 
+
 h1 {
     color:rgb(149, 42, 0);
-  font-family: "Stack Sans Notch", sans-serif;
+  font-family: "Stack Sans Head", sans-serif;
   width:auto;
   white-space: nowrap;
     font-size: 5em;
@@ -39,7 +40,7 @@ h1 {
 
 .liste {
     color:rgb(96, 24, 0);
-  font-family: "Stack Sans Notch", sans-serif;
+  font-family: "Stack Sans Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -109,3 +110,10 @@ footer {
     border-top: 1px solid rgb(200, 200, 200);
     background-color: #fff;
 } 
+
+.sous_titre {
+    color:rgb(0, 0, 0);
+    font-family: "Futura", sans-serif;
+    text-align: center;
+    font-size: 1.8em;
+}
