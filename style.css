@@ -24,6 +24,7 @@ ul{
 body {
     margin: 0px;
     padding: 20px;
+    padding-top: 150px;
     background-color: beige;
 }
 
@@ -123,4 +124,21 @@ footer {
     display: flex;
     justify-content: center;
 
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0)
+  );
+  transition: 0.4s;
+}
+
+header.scrolled{  
+  background-color: rgba(245, 245, 220, 0.72);
 }
