@@ -98,7 +98,7 @@ a {
     }
 
     #logo {
-        width: 100px;           /* On peut réduire un peu le logo si on veut */
+        width: 50px;           /* On peut réduire un peu le logo si on veut */
     }
 }
 
@@ -141,4 +141,53 @@ header {
 
 header.scrolled{  
   background-color: rgba(245, 245, 220, 0.72);
+}
+
+#countdown {
+    display: flex;             /* Met les éléments sur une ligne */
+    justify-content: center;   /* Centre le tout horizontalement */
+    gap: 20px;                 /* Espace entre les boîtes */
+    font-family: sans-serif;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;    /* Chiffre au-dessus, texte en-dessous */
+    align-items: center;
+    background-color: rgb(169, 62, 0);    /* Fond gris foncé */
+    color: white;              /* Texte blanc */
+    padding: 15px;
+    border-radius: 8px;        /* Coins arrondis */
+    min-width: 80px;
+}
+
+.time-box span:first-child {   /* Le chiffre */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.label {                       /* Le texte "Jours", etc. */
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.lienmagnum{
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    border: #9b503d 2px solid;
+    border-radius: 8px;
+    text-align: center;
+    color:#9b503d;
+    text-decoration: none;
+}
+
+.lienmagnum.bloque {
+    opacity: 0.5;          /* On le rend presque transparent (fantôme) */
+    pointer-events: none;  /* ⛔️ INTERDIT DE CLIQUER */
+}
+
+#lientexte{
+    text-decoration: none;
+    font-size: 0.8em;
 }
